@@ -11,14 +11,15 @@ using namespace cv;
 class Traitement
 {
 public:
-    Traitement();
-    Mat pretrait(Mat image);
+    Traitement(Mat img, Mat ref);
+    Mat pretrait();
     vector<string> extract(Mat image);
     string * classi(vector<string> descrip );
 
 
 private:
     Mat image;
+    Mat ref;
     Mat image_pt;
     vector<string> desc;
     string etiquette;
