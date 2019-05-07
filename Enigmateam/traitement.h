@@ -13,6 +13,7 @@ class Traitement
 public:
     Traitement(Mat img, Mat ref);
     Mat pretrait();
+
     vector<string> extract(Mat image);
     string * classi(vector<string> descrip );
 
